@@ -7,7 +7,6 @@
     <style>
         .container {
             padding: 0 5% 0 5%;
-
         }
 
         body {
@@ -29,6 +28,7 @@
             font-palette: dark;
             font-weight: bold;
             text-decoration: none;
+            color: black;
         }
 
         #logo {
@@ -68,7 +68,6 @@
             padding: 7px;
             border: 0;
             border-radius: 25px;
-            background: rgb(228,247,82);
             background: linear-gradient(90deg, rgba(228,247,82,1) 0%, rgba(59,133,55,1) 100%);
             color: white;
             font-family: Nanami, sans-serif;
@@ -76,7 +75,12 @@
             letter-spacing: 2px;
             font-size: 18px;
             margin-top: 2%;
+            opacity: 1;
+            transition: 0.3s;
 
+        }
+        .moreButton:hover{
+            opacity: 0.7;
         }
         @media (max-width:650px){
             li{
@@ -89,7 +93,17 @@
             }
             
         }
+        .navComp li {
+            overflow: hidden;
+            border-radius: 75px;
+        }
+        .navComp li:hover{
+            background-color: #e4f752;
+            opacity: 0.2;
+        }
+
     </style>
+    <script src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <header>
@@ -97,13 +111,14 @@
         <div>
             <img src="logo.svg" id="logo">
         </div>
-        <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#">Home</a></li>
+        <div >
+        <ul class="navComp">
+            <li ><a href="#">Home</a></li>
             <li><a href="#">Community</a></li>
             <li><a href="#">Information</a></li>
             <li><a href="#">About us</a></li>
         </ul>
+        </div>
     </div>
 </header>
 
@@ -132,5 +147,11 @@
         <input type="submit" class="moreButton" value="more">
     </div>
 </div>
+
+<script>
+
+
+
+</script>
 </body>
 </html>
