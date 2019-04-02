@@ -93,6 +93,9 @@
             }
             
         }
+        .navComp{
+            white-space: nowrap;
+        }
         .navComp li {
             overflow: hidden;
             border-radius: 75px;
@@ -101,13 +104,18 @@
             background-color: #e4f752;
             opacity: 0.2;
         }
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3em;
+        }
 
     </style>
     <script src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <header>
-    <div class="container">
+    <div class="container" id="navbar">
         <div>
             <img src="logo.svg" id="logo">
         </div>
