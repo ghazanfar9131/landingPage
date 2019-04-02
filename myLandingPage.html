@@ -115,16 +115,16 @@
 </head>
 <body>
 <header>
-    <div class="container">
+    <div class="container myHeader">
         <div>
             <img src="logo.svg" id="logo">
         </div>
         <div>
             <ul class="navComp">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Information</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#information">Information</a></li>
+                <li><a href="#about">About us</a></li>
             </ul>
         </div>
     </div>
@@ -152,11 +152,25 @@
                 aliquam sed ornare libero. Integer auctor id nisi quis tincidunt.
             </p>
         </article>
-        <input type="submit" class="moreButton" value="more">
+        <input type="submit" class="moreButton" value="more" id="more_btn">
     </div>
 </div>
 
 <script>
+
+    $(document).click(function (e) {
+        if ($(e.target).is("a[href=#home]")) {
+            alert("Home Clicked!!!")
+        } else if ($(e.target).is("a[href=#community]")) {
+            alert("Community Clicked!!!")
+        } else if ($(e.target).is("a[href=#information]")) {
+            alert("Information Clicked!!!")
+        } else if ($(e.target).is("a[href=#about]")) {
+            alert("About Us Clicked!!!")
+        } else if ($(e.target).is("#more_btn")) {
+            alert("More Button Clicked!!!")
+        }
+    });
 
 
 </script>
