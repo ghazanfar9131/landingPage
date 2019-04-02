@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Landing Page</title>
+
+    <style>
+        .container {
+            padding: 0 5% 0 5%;
+
+        }
+
+        body {
+
+            background: url("background.svg") fixed;
+            background-size: cover;
+        }
+
+        ul {
+            text-align: right;
+            padding-right: 5%;
+        }
+
+        li {
+            display: inline;
+            padding: 3%;
+            font-family: Nanami, Helvetica, Arial, sans-serif;
+            font-size: 20px;
+            font-palette: dark;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #logo {
+            width: 50px;
+            display: inline;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #1a1a1a;
+        }
+        .myText{
+            padding: 10% 0 0 7%;
+        }
+        .environment {
+            margin: 0;
+            font-weight: bold;
+            font-family: Nanami, sans-serif;
+            font-size: 150px;
+            letter-spacing: 7px;
+        }
+
+        @font-face {
+            font-family: Nanami;
+            src: url("Nanami-Book.otf");
+        }
+
+        article {
+            margin-left: 5px;
+            max-width: 800px;
+            font-family: Nanami, sans-serif;
+            text-align: justify;
+            font-size: 17px;
+        }
+        .moreButton{
+            width: 120px;
+            padding: 7px;
+            border: 0;
+            border-radius: 25px;
+            background: rgb(228,247,82);
+            background: linear-gradient(90deg, rgba(228,247,82,1) 0%, rgba(59,133,55,1) 100%);
+            color: white;
+            font-family: Nanami, sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 18px;
+            margin-top: 2%;
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div>
+            <img src="logo.svg" id="logo">
+        </div>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="container">
+    <div class="myText">
+        <h1 class="environment">
+            Environment
+        </h1>
+        <article>
+            <p>
+                Nam mollis venenatis tortor, eu finibus sapien vulputate non. Maecenas ac velit turpis. Etiam in
+                tincidunt quam.
+                Praesent porta dui quis tortor consequat vestibulum sed eu sem. Fusce ut arcu condimentum, iaculis justo
+                quis,
+                eleifend tellus. Sed eleifend ante ac felis interdum, ac maximus sapien facilisis. Cras scelerisque
+                vehicula
+                posuere. Maecenas mollis diam vel elit volutpat mattis. Class aptent taciti sociosqu ad litora torquent
+                per
+                conubia nostra, per inceptos himenaeos. Fusce magna urna, lacinia vel mauris eget, maximus placerat
+                elit. Donec
+                enim enim, feugiat id tincidunt in, laoreet ut nunc. Curabitur et viverra enim. Nunc et ex a turpis
+                feugiat
+                aliquam sed ornare libero. Integer auctor id nisi quis tincidunt.
+            </p>
+        </article>
+        <input type="submit" class="moreButton" value="more">
+    </div>
+</div>
+</body>
+</html>
